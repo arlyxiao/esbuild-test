@@ -9,7 +9,6 @@ import { buildOptions } from './esbuild.config.mjs'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Start esbuild's server on a random local port
 serve({
   servedir: resolve(__dirname, 'public'),
   host: '127.0.0.1',

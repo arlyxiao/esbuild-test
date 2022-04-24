@@ -19,7 +19,8 @@ export const buildOptions = {
   sourcemap: true,
   target: 'es6',
   logLevel: 'info',
-  outfile: resolve(__dirname, 'public', 'dist', 'bundle.js'),
+  outdir: resolve(__dirname, 'public', 'dist'),
+  format: 'esm',
   plugins: [sassPlugin({
     type: 'style',
     transform: postcssModules({})

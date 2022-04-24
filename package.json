@@ -6,19 +6,24 @@
     "typescript",
     "esbuild"
   ],
+  "type": "module",
   "scripts": {
     "build": "node esbuild.build.mjs",
-    "start": "node esbuild.serve.mjs"
+    "start": "node esbuild.serve.mjs",
+    "build:server": "node esbuild.build.server.mjs",
+    "start:server": "node public/dist/server.js"
   },
   "dependencies": {
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
     "esbuild": "^0.14.38",
+    "express": "^4.17.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "typescript": "^4.6.3"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "esbuild-sass-plugin": "^2.2.6",
     "postcss": "^8.4.12",
     "postcss-modules": "^4.3.1"
